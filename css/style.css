@@ -1,0 +1,20 @@
+body{
+    /*max-width: 1440px;*/
+    /*max-height: 4962px;*/
+}
+.header_inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.container{
+    background: #2B4074;
+    max-width: 1420px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.logo{
+    text-decoration: none;
+}
