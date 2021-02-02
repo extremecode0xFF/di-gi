@@ -1,20 +1,105 @@
-body{
-    /*max-width: 1440px;*/
-    /*max-height: 4962px;*/
-}
-.header_inner{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-.container{
-    background: #2B4074;
-    max-width: 1420px;
-    margin: 0 auto;
-    padding: 0 10px;
+html {
+    box-sizing: border-box;
 }
 
-.logo{
+.container {
+    position: relative;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    font-weight: 700;
+}
+
+/* HEADER */
+
+.header_inner {
+    background: #2B4074;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 60px;
+}
+
+.logo {
     text-decoration: none;
+}
+
+.logo-image {
+    width: 100px;
+    height: 66px;
+}
+
+.menu-button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    background-image: url("../images/menu-button.svg");
+}
+
+/* INTRO */
+.intro_inner {
+    height: 668px;
+    background: url("../images/bg-alpha.png") center, url("../images/bg-img.jpg") center;
+
+}
+
+.title {
+    display: block;
+    width: 513px;
+    height: 192px;
+    margin: 0 auto 0;
+    padding-top: 107px;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 96px;
+    text-align: center;
+}
+
+.intro-text {
+    display: block;
+    width: 886px;
+    height: 60px;
+    padding-top: 18px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.pagination-button {
+    display: block;
+    margin: 28px auto 0;
+    font-family: 'Roboto', sans-serif;
+    width: 200px;
+    height: 50px;
+    padding: 0;
+    background: #2B4074;
+    color: #F9F6E5;
+    border: none;
+    border-radius: 3px;
+}
+
+.circles{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 124px;
+}
+.oval{
+    width: 10px;
+    height: 10px;
+}
+.oval + .oval{
+    padding-left: 10px;
+}
+
+.arrow{
+
 }
