@@ -4,25 +4,49 @@ html {
 
 .container {
     position: relative;
-    max-width: 1320px;
+    max-width: 1280px;
+    padding: 0 60px;
     margin: 0 auto;
 }
 
+p,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
 body {
+    max-width: 1440px;
     font-family: 'Roboto Condensed', sans-serif;
     color: white;
     font-weight: 700;
+
+    /*font-family: 'Dosis', sans-serif;*/
+    /*font-family: 'Roboto', sans-serif;*/
+    /*font-family: 'Roboto Condensed', sans-serif;*/
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button{
+    border-radius: 3px;
+    border: none;
+    padding: 0;
+    font-size: 18px;
+    line-height: 18px;
 }
 
 /* HEADER */
+.header{
+    background: #2B4074;
+    /*padding: 0 60px;*/
+}
 
 .header_inner {
-    background: #2B4074;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100px;
-    padding: 0 60px;
 }
 
 .logo {
@@ -34,30 +58,28 @@ body {
     height: 66px;
 }
 
-.menu-button {
+.button.menu {
     width: 40px;
     height: 40px;
-    border: none;
-    border-radius: 3px;
     background-image: url("../images/menu-button.svg");
 }
 
-.menu-button:hover{
-    cursor: pointer;
+/* INTRO */
+
+.intro{
+    background: url("../images/bg-alpha.png") center center, url("../images/bg-img.jpg") center center;
+    background-size: cover;
 }
 
-/* INTRO */
-.intro_inner {
+.intro_inner{
     height: 668px;
-    background: url("../images/bg-alpha.png") center, url("../images/bg-img.jpg") center;
-
 }
 
 .title {
     display: block;
     width: 513px;
     height: 192px;
-    margin: 0 auto 0;
+    margin: auto;
     padding-top: 107px;
     font-weight: 400;
     font-size: 96px;
@@ -77,37 +99,119 @@ body {
     font-weight: 400;
 }
 
-.button {
+.button.more {
     display: block;
     margin: 28px auto 0;
     font-family: 'Roboto', sans-serif;
     width: 200px;
     height: 50px;
-    padding: 0;
     background: #2B4074;
     color: #F9F6E5;
-    border: none;
-    border-radius: 3px;
 }
 
-.button:hover{
-    cursor: pointer;
-}
-
-.circles{
+.circles {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     padding-top: 124px;
 }
-.oval{
+
+.oval {
     width: 10px;
     height: 10px;
 }
-.oval + .oval{
+
+.oval + .oval {
     padding-left: 10px;
 }
 
+.arrows {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
 .arrow{
+    border: none;
+    width: 70px;
+    height: 70px;
+}
+
+.arrow.forward{
+    background: url("../images/forward.png") center no-repeat, linear-gradient(0,#2B4074,#2B4074);
+}
+
+.arrow.back{
+    background: url("../images/back.png") center no-repeat,linear-gradient(0,#F9F6E5,#F9F6E5);
+}
+
+/* PROMO */
+
+.promo{
+    background: #2B4074;
+    height: 192px;
+}
+promo.title{
 
 }
+.promo_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 57px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.promo-title{
+    font-size: 24px;
+    line-height: 32px;
+    padding-bottom: 4px;
+}
+
+.promo-text{
+    font-family: 'Dosis', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.promo-button{
+    width: 200px;
+    height: 50px;
+    background-color: #F9F6E5;
+}
+
+.services_inner{
+
+}
+.services-content{
+    position: absolute;/*mb delete*/
+    height: 500px;
+}
+
+.services-title{
+    padding-top: 90px;
+    color: #2B4074;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    padding-bottom: 64px;
+}
+
+.text-1{
+    color: #4A4A4A;
+    max-width: 393px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+}
+
+.text-2{
+    color: #797979;
+}
+
