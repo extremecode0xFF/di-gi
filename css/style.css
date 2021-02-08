@@ -14,7 +14,7 @@ html {
     margin: 0 auto;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p, h1, h2, h3, h4, h5, h6, figure {
     margin: 0;
 }
 
@@ -85,7 +85,6 @@ body {
 
 .intro_inner {
     position: relative;
-    height: 668px;
 }
 
 .title {
@@ -125,7 +124,7 @@ body {
 .circles {
     display: flex;
     justify-content: center;
-    padding-top: 124px;
+    padding: 124px 0 79px;
 }
 
 .oval {
@@ -164,14 +163,13 @@ body {
 /* PROMO */
 .promo {
     background: #2B4074;
-    height: 192px;
 }
 
 .promo_inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 57px;
+    padding: 57px 0;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
 }
@@ -199,10 +197,7 @@ body {
 .services_inner {
     display: flex;
     justify-content: space-between;
-}
-
-.services-content {
-    height: 546px;
+    padding: 15px 0;
 }
 
 .services-title {
@@ -250,7 +245,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 200px;
-    height: 273px;
+    height: 270px;
     border: 1px solid #F9F6E5;
 }
 
@@ -311,8 +306,11 @@ body {
 /*RECENT WORK*/
 
 .recent {
-    min-height: 668px;
     background: linear-gradient(180deg, #2B4074 0%, rgba(43, 64, 116, 0) 100%);
+}
+
+.recent_inner{
+    padding: 70px 0 130px;
 }
 
 .recent_title {
@@ -323,7 +321,7 @@ body {
 
 .recent_title-text {
     font-weight: 400;
-    padding: 80px 0 24px;
+    padding-bottom: 24px;
 }
 
 .recent_title-line {
@@ -335,9 +333,6 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-}
-
-.recent_content-block {
     padding-top: 80px;
 }
 
@@ -376,15 +371,12 @@ body {
 }
 
 /*VIDEO*/
-.video {
-    min-height: 580px;
-}
-
 .video_inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    padding: 80px 0;
 }
 
 .video_about {
@@ -427,17 +419,17 @@ body {
 
 /*NEWS*/
 .news {
-    min-height: 1044px;
     background-color: #F9F6E5;
 }
 
 .news_inner {
+    padding: 52px 0 80px;
     display: flex;
     flex-direction: column;
 }
 
 .news_title {
-    padding: 52px 0 108px;
+    padding-bottom: 108px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -452,7 +444,6 @@ body {
 }
 
 .news_content-block {
-    padding-bottom: 80px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
@@ -465,7 +456,10 @@ body {
 
 .news_content {
     position: relative;
-    margin: 0 0 20px;
+}
+
+.news_content:first-child{
+    margin-bottom: 25px;
 }
 
 .news_content-image {
@@ -475,13 +469,13 @@ body {
 }
 
 .news_content-text {
+    position: absolute;
     display: flex;
     align-items: center;
-    position: absolute;
     width: calc(100% - 20px);
     height: 40px;
     color: #4A4A4A;
-    background-color: white;
+    background-color: #FFF;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
     bottom: 0;
@@ -489,15 +483,205 @@ body {
     line-height: 19px;
     letter-spacing: 2px;
     padding-left: 20px;
+    transition: .5s;
 }
 
-.news_content-hidden-link {
+.news_content-link {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    transition: .5s;
 }
 
+.new_content-hidden-icon{
+    position: absolute;
+    display: block;
+    /*margin: 0 auto;*/
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s;
+    opacity: 0;
+}
+
+.news_content:hover .new_content-hidden-icon{
+    opacity: 1;
+}
+
+.news_content:hover .news_content-text{
+    background-color: #2B4074;
+    color: #F9F6E5;
+    bottom: 35px;
+}
+
+.news_content:hover .news_content-link{
+    outline: 10px solid #2B4074;;
+    outline-offset: -10px;
+}
+/*TESTIMONIALS*/
+.testimonial_inner{
+    display: flex;
+    flex-direction: column;
+    margin: 100px 0 133px;
+}
+.fas .fa-quote-right{
+    color: #2B4074;
+    font-size: 34px;
+    margin: 0 auto;
+}
+
+.testimonial_carousel{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.testimonial_carousel-quote{
+    quotes: none;
+    color: #4A4A4A;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+
+}
+
+.testimonial_carousel-quote span{
+    color: #2B4074;
+    font-weight: 700;
+}
+
+.testimonial_carousel-author{
+    padding-top: 30px;
+    display: block;
+    color: #4A4A4A;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 2px;
+}
+
+.testimonial_carousel-owls{
+    padding-top: 80px;
+}
+
+.owl{
+    color: #2B4074;
+    outline:none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.fa-circle{
+    display: block;
+    font-size: 10px;
+}
+/*FOOTER*/
+footer{
+    position: relative;
+    background-color: #2B4074;
+}
+.footer_logo{
+    width: 230px;
+    height: 60px;
+    background-color: #2B4074;
+    border-radius: 3px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.footer_logo-image{
+    display: block;
+    margin: 0 auto;
+    width: 84px;
+    height: 55px;
+}
+
+.footer_inner{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding: 158px 0 115px;
+}
+
+.footer-text{
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 80px;
+}
+.footer_social{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50px;
+    justify-items: center;
+    border-style: solid;
+    border-color: #7EBF84;
+    border-width: 1px;
+    border-left: none;
+    border-right: none;
+}
+.footer_social-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.footer_social-block ~ .footer_social-block{
+    border-left: 1px solid #7EBF84;
+}
+
+.fab{
+    color: #FFF;
+    font-size: 20px;
+}
+
+.footer_widgets{
+    margin: 80px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.widgets-contacts{
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.widget-name{
+    color: #F9F6E5;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 2px;
+    padding-bottom: 14px;
+}
+
+.widget-contact-link{
+    color: #FFF;
+    font-size: 16px;
+    line-height: 20px;
+}
+/*COPYRIGHT*/
+.copyright{
+    background: #F9F6E5;
+}
+
+.copyright_inner{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0 10px;
+    right: 0;
+}
+.copyright-up{
+    display: inline;
+    color: #4A4A4A;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2px;
+}
 
 
