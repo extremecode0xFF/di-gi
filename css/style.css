@@ -745,7 +745,7 @@ footer {
     }
 
     .services-items{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 50vw);
         grid-template-rows: repeat(4, 270px);
     }
 }
@@ -755,6 +755,10 @@ footer {
     .title {
         font-size: 45px;
         line-height: 45px;
+    }
+
+    .arrows {
+        display: none;
     }
 
     .promo_inner {
@@ -787,10 +791,6 @@ footer {
 
     .button.more {
         margin: 0;
-        display: none;
-    }
-
-    .arrows {
         display: none;
     }
 
