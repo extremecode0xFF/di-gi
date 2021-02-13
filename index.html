@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <meta property="og:title" content="DiGi-digital agensy: Мы предоставляем комплексный подход к продвижению компании, продуктов и услуг в цифровой сфере."/>
+    <meta property="og:title"
+          content="DiGi-digital agensy: Мы предоставляем комплексный подход к продвижению компании, продуктов и услуг в цифровой сфере."/>
     <meta property="og:description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus sequi, fuga cumque
   perspiciatis voluptatibus dolorem dolor!"/>
     <meta property="og:type" content="website"/>
@@ -23,6 +24,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500&display=swap"
           rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/all.css">
@@ -42,23 +45,31 @@
     </div>
 </header>
 
-<section class="intro">
+<section class="intro" id="intro">
     <div class="container">
         <div class="intro_inner">
-            <h1 class="title">МЫСЛИ<br>ГЛОБАЛЬНО</h1>
-            <p class="intro-text">Di Gі - это диджитал агентство полного цикла,
-                направленное на самый лучший результат наших клиентов в маркетинге,
-                продажах и управлении</p>
-            <button class="button more">ПОДРОБНЕЕ</button>
-
-            <div class="circles">
-                <img class="oval fill" src="images/oval_fill.png" alt="oval_fill">
-                <img class="oval hollow" src="images/oval_hollow.png" alt="oval_hollow">
-                <img class="oval fill" src="images/oval_fill.png" alt="oval_fill">
-            </div>
-            <div class="arrows">
-                <button class="arrow forward"></button>
-                <button class="arrow back"></button>
+            <div class="owl-carousel owl-theme">
+                <div class="intro_owl-content">
+                    <h1 class="title">МЫСЛИ<br>ГЛОБАЛЬНО</h1>
+                    <p class="intro-text">Di Gі - это диджитал агентство полного цикла,
+                        направленное на самый лучший результат наших клиентов в маркетинге,
+                        продажах и управлении</p>
+                    <button class="button more">ПОДРОБНЕЕ</button>
+                </div>
+                <div class="intro_owl-content">
+                    <h1 class="title">ДОСТИГАЙ<br>ЖЕЛАЕМОГО</h1>
+                    <p class="intro-text">Di Gі - это диджитал агентство полного цикла,
+                        направленное на самый лучший результат наших клиентов в маркетинге,
+                        продажах и управлении</p>
+                    <button class="button more">ПОДРОБНЕЕ</button>
+                </div>
+                <div class="intro_owl-content">
+                    <h1 class="title">МЕЧТЫ<br>МЕНЯЮТСЯ</h1>
+                    <p class="intro-text">Di Gі - это диджитал агентство полного цикла,
+                        направленное на самый лучший результат наших клиентов в маркетинге,
+                        продажах и управлении</p>
+                    <button class="button more">ПОДРОБНЕЕ</button>
+                </div>
             </div>
         </div>
     </div>
@@ -306,20 +317,20 @@
     <div class="container2">
         <div class="testimonial_inner">
             <i class="fas fa-quote-right"></i>
-            <div class="testimonial_carousel">
-                <q class="testimonial_carousel-quote">Если нужно создавать либо повышать имидж компании,
-                    то <span>диджитал-маркетинг</span> является наиболее подходящим</q>
-                <cite class="testimonial_carousel-author">- Маргарита Акулич</cite>
-                <div class="testimonial_carousel-owls">
-                    <button class="owl">
-                        <i class="far fa-circle"></i>
-                    </button>
-                    <button class="owl">
-                        <i class="fas fa-circle"></i>
-                    </button>
-                    <button class="owl">
-                        <i class="far fa-circle"></i>
-                    </button>
+            <div class="owl-carousel owl-theme">
+                <div class="testimonial_owl-content">
+                    <q class="testimonial_carousel-quote">Многие не любят <span>перемен</span>, но мы должны научиться принимать их.
+                        Особенно если альтернатива переменам – это катастрофа.</q>
+                    <cite class="testimonial_carousel-author">- Илон Маск</cite>
+                </div>
+                <div class="testimonial_owl-content">
+                    <q class="testimonial_carousel-quote">Всегда выбирайте самый <span>трудный путь</span> – там вы не встретите конкурентов.</q>
+                    <cite class="testimonial_carousel-author">- Шарль де Голль</cite>
+                </div>
+                <div class="testimonial_owl-content">
+                    <q class="testimonial_carousel-quote">Я не думаю, что есть другое качество, столь необходимое для успеха любого рода, как <span>настойчивость</span>.
+                        Настойчивость может преодолеть всё, даже законы природы.</q>
+                    <cite class="testimonial_carousel-author">- Джон Рокфеллер</cite>
                 </div>
             </div>
         </div>
@@ -408,6 +419,9 @@
     </div>
 </section>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+
 <script src="js/main.js"></script>
 </body>
 </html>
